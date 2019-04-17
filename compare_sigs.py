@@ -420,4 +420,6 @@ for file in wavefiles:
 
         fig.savefig(os.path.join(plotsDir, file) + '.png')
     except:
+        print('\n')
+        print('File: ', file)
         print('Error: cannot read the wave file. The format is unkown.')
